@@ -44,7 +44,7 @@ const BlockStyleControls = (props) => {
 
   return (
     <div className="RichEditor-controls">
-      <span className="type">{type} </span>
+      <span className="type">{type}: </span>
       {BLOCK_TYPES.map((type) =>
         <StyleButton
           key={type.label}
