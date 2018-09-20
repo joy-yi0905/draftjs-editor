@@ -1,6 +1,6 @@
 # draftjs-editor
 
-An web editor based on [draftjs](https://github.com/facebook/draft-js), You can view the online demo [here](http://yi-jy.com/draftjs-editor/example/).
+An web editor based on [draftjs](https://github.com/facebook/draft-js), You can view the online demo [here](https://yi-jy.com/draftjs-editor/example/).
 
 Start the project locally with the following command:
 
