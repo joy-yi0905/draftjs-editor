@@ -83,9 +83,6 @@ const InlineStyleControls = (props) => {
 };
 
 export default class TextToolbar extends Component {
-  constructor() {
-    super();
-  }
 
   toggleBlock = (blockType) => {
     this.props.toggleBlockType(blockType)

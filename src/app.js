@@ -11,8 +11,6 @@ class App extends Component {
     super(props);
     this.state = {
       editorState: null,
-      blockType: '',
-      inlineType: '',
       textContent: JSON.parse(sessionStorage.getItem('textContent'))
     }
   }
