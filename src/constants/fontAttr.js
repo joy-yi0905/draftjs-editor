@@ -1,44 +1,44 @@
 const BLOCK_TYPES = [
-  { label: 'H1', style: 'header-one' },
-  { label: 'H2', style: 'header-two' },
-  { label: 'H3', style: 'header-three' },
-  { label: 'H4', style: 'header-four' },
-  { label: 'H5', style: 'header-five' },
-  { label: 'H6', style: 'header-six' },
-  { label: 'Blockquote', style: 'blockquote' },
-  { label: 'UL', style: 'unordered-list-item' },
-  { label: 'OL', style: 'ordered-list-item' },
-  { label: 'Code Block', style: 'code-block' },
+  { label: 'H1', value: 'header-one' },
+  { label: 'H2', value: 'header-two' },
+  { label: 'H3', value: 'header-three' },
+  { label: 'H4', value: 'header-four' },
+  { label: 'H5', value: 'header-five' },
+  { label: 'H6', value: 'header-six' },
+  { label: 'Blockquote', value: 'blockquote' },
+  { label: 'UL', value: 'unordered-list-item' },
+  { label: 'OL', value: 'ordered-list-item' },
+  { label: 'Code Block', value: 'code-block' },
 
-  { label: 'Text Left', style: 'text-left' },
-  { label: 'Text Center', style: 'text-center' },
-  { label: 'Text Right', style: 'text-right' },
+  { label: 'Text Left', value: 'text-left' },
+  { label: 'Text Center', value: 'text-center' },
+  { label: 'Text Right', value: 'text-right' },
 ];
 
 const INLINE_STYLES_BASE = [
-  { label: 'Bold', style: 'BOLD' },
-  { label: 'Italic', style: 'ITALIC' },
-  { label: 'Underline', style: 'UNDERLINE' },
-  { label: 'Monospace', style: 'CODE' },
+  { label: 'Bold', value: 'BOLD' },
+  { label: 'Italic', value: 'ITALIC' },
+  { label: 'Underline', value: 'UNDERLINE' },
+  { label: 'Monospace', value: 'CODE' },
 ];
 
 const INLINE_STYLES_FONT_FAMILY = [
-  { label: 'Arial', style: 'FONT_FAMILY_ARIAL' },
-  { label: 'Fantasy', style: 'FONT_FAMILY_FANTASY' },
-  { label: 'Cursive', style: 'FONT_FAMILY_CURSIVE' }
+  { label: 'Arial', value: 'FONT_FAMILY_ARIAL' },
+  { label: 'Fantasy', value: 'FONT_FAMILY_FANTASY' },
+  { label: 'Cursive', value: 'FONT_FAMILY_CURSIVE' }
 ];
 
 const INLINE_STYLES_FONT_SIZE = [
-  { label: '16', style: 'FONT_SIZE_16' },
-  { label: '28', style: 'FONT_SIZE_28' },
-  { label: '36', style: 'FONT_SIZE_36' },
+  { label: '16', value: 'FONT_SIZE_16' },
+  { label: '28', value: 'FONT_SIZE_28' },
+  { label: '36', value: 'FONT_SIZE_36' },
 ];
 
 const INLINE_STYLES_COLOR = [
-  { label: 'Black', style: 'COLOR_BLACK' },
-  { label: 'Red', style: 'COLOR_RED' },
-  { label: 'Blue', style: 'COLOR_BLUE' },
-  { label: 'Green', style: 'COLOR_GREEN' }
+  { label: 'Black', value: 'COLOR_BLACK' },
+  { label: 'Red', value: 'COLOR_RED' },
+  { label: 'Blue', value: 'COLOR_BLUE' },
+  { label: 'Green', value: 'COLOR_GREEN' }
 ];
 
 const baseStyleMap = {

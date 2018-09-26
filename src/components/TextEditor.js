@@ -51,7 +51,7 @@ export default class TextEditor extends Component {
     this.onChange(nextEditorState);
   }
 
-  toggleInlineType(inlineStyle) {
+  toggleInlineType(inlineType) {
     const { editorState } = this.state;
     const selection = editorState.getSelection();
 
@@ -67,9 +67,9 @@ export default class TextEditor extends Component {
         // If the current selection is clicked on color/font-size/font-family
         // And when the current style contains color/font-size/font-family, just remove other color/font-size/font-family
         if (
-          inlineStyle.includes('COLOR') && style && style.includes('COLOR') ||
-          inlineStyle.includes('FONT_SIZE') && style && style.includes('FONT_SIZE') ||
-          inlineStyle.includes('FONT_FAMILY') && style && style.includes('FONT_FAMILY')
+          inlineType.includes('COLOR') && style && style.includes('COLOR') ||
+          inlineType.includes('FONT_SIZE') && style && style.includes('FONT_SIZE') ||
+          inlineType.includes('FONT_FAMILY') && style && style.includes('FONT_FAMILY')
         ) {
           return RichUtils.toggleInlineStyle(state, style);
         } else {
@@ -81,8 +81,8 @@ export default class TextEditor extends Component {
 
     // If the color is being toggled on, apply it.
     nextEditorState = RichUtils.toggleInlineStyle(
-      !currentStyle.has(inlineStyle) ? nextEditorState : this.state.editorState,
-      inlineStyle
+      !currentStyle.has(inlineType) ? nextEditorState : this.state.editorState,
+      inlineType
     )
 
     this.onChange(nextEditorState);
