@@ -48,10 +48,10 @@ const BlockStyleControls = (props) => {
       {BLOCK_TYPES.map((type) =>
         <StyleButton
           key={type.label}
-          active={type.style === blockType}
+          active={type.value === blockType}
           label={type.label}
           onToggle={props.onToggle}
-          style={type.style}
+          style={type.value}
         />
       )}
     </div>
@@ -72,10 +72,10 @@ const InlineStyleControls = (props) => {
       {styles.map((type) =>
         <StyleButton
           key={type.label}
-          active={currentStyle && currentStyle.has(type.style)}
+          active={currentStyle && currentStyle.has(type.value)}
           label={type.label}
           onToggle={props.onToggle}
-          style={type.style}
+          style={type.value}
         />
       )}
     </div>
